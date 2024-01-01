@@ -29,6 +29,11 @@
             dateRd.innerText = document.getElementById("add_button").value;
             contentTd.innerText = document.getElementById("add_text");
             removeTd.appendChild(removeButton);
+
+            //TRへTDを追加
+            newRow.appendChild(dateTd);
+            newRow.appendChild(contentTd);
+            newRow.appendChild(removeTd);
         }
 
         window.onload = () => {
