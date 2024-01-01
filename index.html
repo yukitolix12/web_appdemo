@@ -7,7 +7,7 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script>
         const removeClick = () => {
-            
+            //TODO removeボタンのクリック処理を実施
         }
 
         const addClick = () => {
@@ -24,6 +24,9 @@
             removeButton.setAttribute("type", "button");
             removeButton.value = "remove";
             removeButton.onclick = removeClick;
+
+            //TDの中身を設定
+            dateRd.innerText = document.getElementById("add_button").value;
         }
 
         window.onload = () => {
